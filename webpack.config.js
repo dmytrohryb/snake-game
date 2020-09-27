@@ -7,10 +7,17 @@ module.exports = {
     publicPath: '/' // public URL of the output directory when referenced in a browser
   },
   module: {  // where we defined file patterns and their loaders
-      rules: [ 
+
+      rules: [
         {
             test: /\.js$/,
-            use: 'babel-loader',
+            use: {
+                loader: 'babel-loader',
+                options: {
+                    // Here you should change 'env' to '@babel/preset-env'
+                    presets: ['@babel/preset-env'],
+                },
+            },
             exclude: [
               /node_modules/
             ]
