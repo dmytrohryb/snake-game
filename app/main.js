@@ -7,7 +7,7 @@ let context = canvas.getContext('2d')
 
 const game = new Game()
 let grid = new Grid(canvas, context)
-let snake = new Snake({x: 140, y: 140}, [{x: 120, y: 140}, {x: 100, y: 140}],{x: 20, y: 0})
+let snake = new Snake(grid, context, {x: 14, y: 14}, [{x: 13, y: 14}, {x: 12, y: 14}],{x: 1, y: 0})
 
 game.subscribe(snake)
 game.start()
