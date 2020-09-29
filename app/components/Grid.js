@@ -35,6 +35,7 @@ export class Grid {
     }
 
     draw() {
+        /*
         let y = 0
 
         while (y < this.canvas.height){
@@ -44,7 +45,6 @@ export class Grid {
             this.context.stroke();
             y = y + 20
         }
-
         let x = 0
 
         while (x < this.canvas.width){
@@ -53,6 +53,6 @@ export class Grid {
             this.context.lineTo(x, this.canvas.height);
             this.context.stroke();
             x = x + 20
-        }
+        }*/
     }
 }

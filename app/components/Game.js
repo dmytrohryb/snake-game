@@ -1,8 +1,6 @@
 export class Game {
-
     constructor () {
         this.observers = []
-
         this.subscribe = this.subscribe.bind(this)
         this.broadcast = this.broadcast.bind(this)
         this.unsubscribe = this.unsubscribe.bind(this)
@@ -10,7 +8,7 @@ export class Game {
     }
 
     start(){
-        setInterval(() => {this.broadcast()}, 500)
+        setInterval(() => {this.broadcast()}, 100)
     }
 
     subscribe (fn) {
